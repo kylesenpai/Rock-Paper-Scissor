@@ -21,7 +21,7 @@ rockBtn.onclick = function(){
     let randNum = Math.floor(Math.random() * 6) + 1;
 
     switch(randNum){
-            case 3:
+            case 1:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: ROCK`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED ROCK.png";
@@ -33,7 +33,7 @@ rockBtn.onclick = function(){
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED PAPER.png";
                 }, 2000);
                 break;
-            case 1:
+            case 3:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: SCISSOR`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED SCISSOR.png";
@@ -59,7 +59,7 @@ rockBtn.onclick = function(){
                 break;
         }
 
-    if(randNum == 3){
+    if(randNum == 1){
         setTimeout(() => {
             winner.textContent = `THE GAME IS DRAW`;
             winner.style.backgroundColor = "rgb(128, 128, 128)";
@@ -74,7 +74,7 @@ rockBtn.onclick = function(){
         }, 2000);
         
     }
-    else if(randNum == 1){
+    else if(randNum == 3){
         setTimeout(() => {
             winner.textContent = `THE PLAYER WON`;
             winner.style.backgroundColor = "rgb(0, 128, 0)";
@@ -124,7 +124,7 @@ paperBtn.onclick = function(){
     let randNum = Math.floor(Math.random() * 6) + 1;
 
     switch(randNum){
-            case 3:
+            case 1:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: ROCK`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED ROCK.png";
@@ -136,7 +136,7 @@ paperBtn.onclick = function(){
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED PAPER.png";
                 }, 2000);
                 break;
-            case 1:
+            case 3:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: SCISSOR`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED SCISSOR.png";
@@ -162,7 +162,7 @@ paperBtn.onclick = function(){
                 break;
         }
 
-    if(randNum == 3){
+    if(randNum == 1){
         setTimeout(() => {
             winner.textContent = `THE PLAYER WON`;
             winner.style.backgroundColor = "rgb(0, 128, 0)";
@@ -177,7 +177,7 @@ paperBtn.onclick = function(){
         }, 2000);
         
     }
-    else if(randNum == 1){
+    else if(randNum == 3){
         setTimeout(() => {
             winner.textContent = `THE PLAYER LOST`;
             winner.style.backgroundColor = "rgba(167, 0, 0, 1)";
@@ -227,7 +227,7 @@ scissorBtn.onclick = function(){
     let randNum = Math.floor(Math.random() * 6) + 1;
 
     switch(randNum){
-            case 3:
+            case 1:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: ROCK`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED ROCK.png";
@@ -239,7 +239,7 @@ scissorBtn.onclick = function(){
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED PAPER.png";
                 }, 2000);
                 break;
-            case 1:
+            case 3:
                 setTimeout(() => {
                     compChoice.textContent = `Computer choose: SCISSOR`;
                     rockComputer.src = "ROCK PAPER SCISSOR/COLORED SCISSOR.png";
@@ -265,7 +265,7 @@ scissorBtn.onclick = function(){
                 break;
         }
 
-    if(randNum == 3){
+    if(randNum == 1){
         setTimeout(() => {
             winner.textContent = `THE PLAYER LOST`;
             winner.style.backgroundColor = "rgba(167, 0, 0, 1)";
@@ -279,7 +279,7 @@ scissorBtn.onclick = function(){
             winner.style.color = "white";
         }, 2000);
     }
-    else if(randNum == 1){
+    else if(randNum == 3){
         setTimeout(() => {
             winner.textContent = `THE GAME IS DRAW`;
             winner.style.backgroundColor = "rgb(128, 128, 128)";
@@ -316,4 +316,5 @@ scissorBtn.onclick = function(){
     compSide.offsetWidth; 
     compSide.classList.add("computer-side");
 }
+
 
